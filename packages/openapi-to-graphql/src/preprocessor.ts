@@ -934,7 +934,8 @@ function getSchemaIndex(
      * However, deepEquals should work for vast majority of cases.
      */
 
-    if (preferredName === def.preferredName && deepEqual(schema, def.schema)) {
+    //if (preferredName === def.preferredName && deepEqual(schema, def.schema)) {
+    if (preferredName === def.preferredName) {
       return index
     }
   }
